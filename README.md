@@ -2,24 +2,24 @@
 
 ## Table of Contents
 
-1. **Introduction to Databases**
-   - Definition
-   - Importance of Databases
-   - Types of Databases
+1. [**Introduction to Databases**](#1-introduction-to-databases)
+   - [Definition](#11-definition)
+   - [Importance of Databases](#12-importance-of-databases)
+   - [Types of Databases](#13-types-of-databases)
 
-2. **Database Design**
-   - Requirements Analysis
-   - Data Modeling
-     - Entity-Relationship Diagrams (ERD)
-     - Normalization
-   - Schema Design
-     - Tables
-     - Relationships
+2. [**Database Design**](#2-database-design)
+   - [Requirements Analysis](#21-requirements-analysis)
+   - [Data Modeling](#22-data-modeling)
+     - [Entity-Relationship Diagrams (ERD)](#221-entity-relationship-diagrams-erd)
+     - [Normalization](#222-normalization)
+   - [Schema Design](#223-schema-design)
+     - [Tables](#2231-tables)
+     - [Relationships](#2231-relationships)
 
-3. **Database Management Systems (DBMS)**
-   - Overview of DBMS
-   - Types of DBMS
-     - Relational DBMS (RDBMS)
+3. [**Database Management Systems (DBMS)**](#3-database-management-systems-dbms)
+   - [Overview of DBMS](#31-overview-of-dbms)
+   - [Types of DBMS](#32-types-of-dbms)
+     - [Relational DBMS (RDBMS)]()
      - NoSQL Databases
      - NewSQL Databases
    - Comparison of Popular DBMS
@@ -85,50 +85,50 @@
 
 ## 1. Introduction to Databases
 
-### Definition
+### 1.1 Definition
 A database is an organized collection of structured information or data, typically stored electronically in a computer system. Databases are managed by Database Management Systems (DBMS), which allow for the storage, retrieval, and manipulation of data.
 
-### Importance of Databases
+### 1.2 Importance of Databases
 - Centralized data management
 - Efficient data retrieval
 - Data integrity and security
 - Scalability for growing datasets
 
-### Types of Databases
+### 1.3 Types of Databases
 - **Relational Databases**: Use tables to store data; examples include MySQL and Oracle.
 - **NoSQL Databases**: Designed for unstructured or semi-structured data; examples include MongoDB and Cassandra.
 - **NewSQL Databases**: Combine the scalability of NoSQL with the ACID guarantees of traditional SQL databases.
 
 ## 2. Database Design
 
-### Requirements Analysis
+### 2.1 Requirements Analysis
 Before creating a database, gather requirements to understand the data that will be stored, user needs, and system constraints.
 
-### Data Modeling
-#### Entity-Relationship Diagrams (ERD)
+### 2.2 Data Modeling
+#### 2.2.1 Entity-Relationship Diagrams (ERD)
 Visual representation of entities in a database and their relationships. It helps in understanding the structure of the data.
 
-#### Normalization
+#### 2.2.2 Normalization
 The process of organizing data to reduce redundancy and improve data integrity. It typically involves dividing a database into two or more tables and defining relationships between them.
 
-### Schema Design
-#### Tables
+### 2.2.3 Schema Design
+#### 2.2.3.1 Tables
 Define the structure of tables, including columns, data types, and constraints (e.g., primary keys, foreign keys).
 
-#### Relationships
+#### 2.2.3.1 Relationships
 Establish how tables relate to one another (one-to-one, one-to-many, many-to-many).
 
 ## 3. Database Management Systems (DBMS)
 
-### Overview of DBMS
+### 3.1 Overview of DBMS
 A DBMS is software that interacts with end users, applications, and the database itself to capture and analyze data.
 
-### Types of DBMS
-- **Relational DBMS (RDBMS)**: Organizes data into tables; uses SQL for data manipulation.
-- **NoSQL Databases**: Non-relational; suitable for big data and real-time web applications.
-- **NewSQL Databases**: Aim to provide the scalability of NoSQL while maintaining the consistency and reliability of traditional RDBMS.
+### 3.2 Types of DBMS
+- 3.2.1 **Relational DBMS (RDBMS)**: Organizes data into tables; uses SQL for data manipulation.
+- 3.2.2 **NoSQL Databases**: Non-relational; suitable for big data and real-time web applications.
+- 3.2.3 **NewSQL Databases**: Aim to provide the scalability of NoSQL while maintaining the consistency and reliability of traditional RDBMS.
 
-### Comparison of Popular DBMS
+### 3.3 Comparison of Popular DBMS
 | Feature        | MySQL          | PostgreSQL     | MongoDB        | Oracle         |
 |----------------|----------------|----------------|----------------|----------------|
 | Type           | RDBMS          | RDBMS          | NoSQL          | RDBMS          |
@@ -137,134 +137,134 @@ A DBMS is software that interacts with end users, applications, and the database
 
 ## 4. Database Implementation
 
-### Installing a DBMS
+### 4.1 Installing a DBMS
 Instructions for installing popular DBMS like MySQL, PostgreSQL, or MongoDB on various platforms.
 
-### Creating a Database
+### 4.2 Creating a Database
 Steps to create a new database using SQL commands or a graphical interface.
 
-### Defining Tables and Data Types
+### 4.3 Defining Tables and Data Types
 How to create tables and specify data types for each column (e.g., INTEGER, VARCHAR, DATE).
 
-### Inserting, Updating, and Deleting Data
+### 4.4 Inserting, Updating, and Deleting Data
 Basic SQL commands for manipulating data within the database.
 
 ## 5. Data Manipulation Language (DML)
 
-### SQL Basics
-#### SELECT
+### 5.1 SQL Basics
+#### 5.1.1 SELECT
 Retrieves data from one or more tables.
 ```sql
 SELECT * FROM customers WHERE country = 'USA';
 ```
 
-#### INSERT
+#### 5.1.2 INSERT
 Adds new records to a table.
 ```sql
 INSERT INTO customers (name, country) VALUES ('John Doe', 'USA');
 ```
 
-#### UPDATE
+#### 5.1.3 UPDATE
 Modifies existing records in a table.
 ```sql
 UPDATE customers SET country = 'Canada' WHERE name = 'John Doe';
 ```
 
-#### DELETE
+#### 5.1.4 DELETE
 Removes records from a table.
 ```sql
 DELETE FROM customers WHERE name = 'John Doe';
 ```
 
-### Joins and Subqueries
+### 5.2 Joins and Subqueries
 - **Joins**: Combine rows from two or more tables based on related columns.
 - **Subqueries**: Nested queries that provide results for the outer query.
 
 ## 6. Database Security
 
-### User Management
+### 6.1 User Management
 Creating and managing user accounts, roles, and permissions to control access to the database.
 
-### Authentication and Authorization
+### 6.2 Authentication and Authorization
 Implementing measures to verify user identity and grant or deny access based on roles.
 
-### Data Encryption
+### 6.3 Data Encryption
 Techniques for securing sensitive data at rest and in transit.
 
-### Backup and Recovery Strategies
+### 6.4 Backup and Recovery Strategies
 Methods for backing up data and recovering it in case of failure or corruption.
 
 ## 7. Database Performance Tuning
 
-### Indexing
+### 7.1 Indexing
 Creating indexes to improve query performance by allowing faster data retrieval.
 
-### Query Optimization
+### 7.2 Query Optimization
 Techniques to enhance SQL queries for better performance.
 
-### Database Partitioning
+### 7.3 Database Partitioning
 Dividing a database into smaller, manageable pieces to improve performance and maintenance.
 
-### Monitoring and Profiling Tools
+### 7.4 Monitoring and Profiling Tools
 Tools to monitor database performance and analyze query execution.
 
 ## 8. Data Integrity and Transactions
 
-### ACID Properties
-- **Atomicity**: Transactions are all-or-nothing.
-- **Consistency**: Database remains in a valid state after transactions.
-- **Isolation**: Transactions operate independently of each other.
-- **Durability**: Completed transactions are permanent.
+### 8.1 ACID Properties
+- 8.1.1 **Atomicity**: Transactions are all-or-nothing.
+- 8.1.2 **Consistency**: Database remains in a valid state after transactions.
+- 8.1.3 **Isolation**: Transactions operate independently of each other.
+- 8.1.4 **Durability**: Completed transactions are permanent.
 
-### Transactions and Concurrency Control
+### 8.2 Transactions and Concurrency Control
 Managing multiple transactions to ensure data consistency and prevent conflicts.
 
-### Isolation Levels
+### 8.3 Isolation Levels
 Different settings for how transactions interact with one another (e.g., Read Committed, Serializable).
 
 ## 9. Backup and Recovery
 
-### Types of Backups
-#### Full Backup
+### 9.1 Types of Backups
+#### 9.1.1 Full Backup
 A complete copy of the entire database.
 
-#### Incremental Backup
+#### 9.1.2 Incremental Backup
 Only backs up data that has changed since the last backup.
 
-### Recovery Strategies
+### 9.1.3 Recovery Strategies
 Methods for restoring data from backups in the event of data loss.
 
-### Disaster Recovery Planning
+### 9.1.4 Disaster Recovery Planning
 Creating a strategy to recover from catastrophic events affecting the database.
 
 ## 10. Database Maintenance
 
-### Routine Maintenance Tasks
+### 10.1 Routine Maintenance Tasks
 Regular activities to keep the database running smoothly, such as updating statistics and rebuilding indexes.
 
-### Database Cleanup
+### 10.2 Database Cleanup
 Removing obsolete data to improve performance and manage storage.
 
-### Updating DBMS
+### 10.3 Updating DBMS
 Steps to apply updates and patches to the DBMS for security and performance improvements.
 
 ## 11. Emerging Trends in Databases
 
-### Cloud Databases
+### 11.1 Cloud Databases
 Databases hosted in the cloud, providing scalability and flexibility.
 
-### Big Data Technologies
+### 11.2 Big Data Technologies
 Tools and frameworks for processing large volumes of data (e.g., Hadoop, Spark).
 
-### Distributed Databases
+### 11.3 Distributed Databases
 Databases that spread data across multiple locations to improve availability and redundancy.
 
 ## 12. Conclusion
 
-### Summary of Key Points
+### 12.1 Summary of Key Points
 Recap the essential aspects covered in the documentation.
 
-### Future Directions in Database Technology
+### 12.2 Future Directions in Database Technology
 Discuss trends and advancements expected in the database field, such as AI integration and improved data analytics.
 
 ---
