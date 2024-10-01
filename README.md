@@ -19,66 +19,66 @@
 3. [**Database Management Systems (DBMS)**](#3-database-management-systems-dbms)
    - [Overview of DBMS](#31-overview-of-dbms)
    - [Types of DBMS](#32-types-of-dbms)
-     - [Relational DBMS (RDBMS)](#321-Relational-DBMS-(RDBMS))
-     - NoSQL Databases
-     - NewSQL Databases
-   - Comparison of Popular DBMS
+     - [Relational DBMS (RDBMS)](#321-relational-dbms-rdbms-organizes-data-into-tables-uses-sql-for-data-manipulation)
+     - [NoSQL Databases](#322-nosql-databases-non-relational-suitable-for-big-data-and-real-time-web-applications)
+     - [NewSQL Databases](#323-newsql-databases-aim-to-provide-the-scalability-of-nosql-while-maintaining-the-consistency-and-reliability-of-traditional-rdbms)
+   - [Comparison of Popular DBMS](#33-comparison-of-popular-dbms)
      - MySQL
      - PostgreSQL
      - MongoDB
      - Oracle
 
-4. **Database Implementation**
-   - Installing a DBMS
-   - Creating a Database
-   - Defining Tables and Data Types
-   - Inserting, Updating, and Deleting Data
+4. [**Database Implementation**](#4-database-implementation)
+   - [Installing a DBMS](#41-installing-a-dbms)
+   - [Creating a Database](#42-creating-a-database)
+   - [Defining Tables and Data Types](#43-defining-tables-and-data-types)
+   - [Inserting, Updating, and Deleting Data](#44-inserting-updating-and-deleting-data)
 
-5. **Data Manipulation Language (DML)**
-   - SQL Basics
-     - SELECT
-     - INSERT
-     - UPDATE
-     - DELETE
-   - Joins and Subqueries
+5. [**Data Manipulation Language (DML)**](#5-data-manipulation-language-dml)
+   - [SQL Basics](#51-sql-basics)
+     - [SELECT](#511-select)
+     - [INSERT](#512-insert)
+     - [UPDATE](#513-update)
+     - [DELETE](#514-delete)
+   - [Joins and Subqueries](#52-joins-and-subqueries)
 
-6. **Database Security**
-   - User Management
-   - Authentication and Authorization
-   - Data Encryption
-   - Backup and Recovery Strategies
+6. [**Database Security**](#6-database-security)
+   - [User Management](#61-user-management)
+   - [Authentication and Authorization](#62-authentication-and-authorization)
+   - [Data Encryption](#63-data-encryption)
+   - [Backup and Recovery Strategies](#64-backup-and-recovery-strategies)
 
-7. **Database Performance Tuning**
-   - Indexing
-   - Query Optimization
-   - Database Partitioning
-   - Monitoring and Profiling Tools
+7. [**Database Performance Tuning**](#7-database-performance-tuning)
+   - [Indexing](#71-indexing)
+   - [Query Optimization](#72-query-optimization)
+   - [Database Partitioning](#73-database-partitioning)
+   - [Monitoring and Profiling Tools](#74-monitoring-and-profiling-tools)
 
-8. **Data Integrity and Transactions**
-   - ACID Properties
-   - Transactions and Concurrency Control
-   - Isolation Levels
+8. [**Data Integrity and Transactions**](#8-data-integrity-and-transactions)
+   -[ACID Properties](#81-acid-properties)
+   - [Transactions and Concurrency Control](#82-transactions-and-concurrency-control)
+   - [Isolation Levels](#83-isolation-levels)
 
-9. **Backup and Recovery**
-   - Types of Backups
-     - Full Backup
-     - Incremental Backup
-   - Recovery Strategies
-   - Disaster Recovery Planning
+9. [**Backup and Recovery**](#9-backup-and-recovery)
+   - [Types of Backups](#91-types-of-backups)
+     - [Full Backup](#911-full-backup)
+     - [Incremental Backup](#912-incremental-backup)
+   - [Recovery Strategies](#913-recovery-strategies)
+   - [Disaster Recovery Planning](#914-disaster-recovery-planning)
 
-10. **Database Maintenance**
-    - Routine Maintenance Tasks
-    - Database Cleanup
-    - Updating DBMS
+10. [**Database Maintenance**](#10-database-maintenance)
+    - [Routine Maintenance Tasks](#101-routine-maintenance-tasks)
+    - [Database Cleanup](#102-database-cleanup)
+    - [Updating DBMS](#103-updating-dbms)
 
-11. **Emerging Trends in Databases**
-    - Cloud Databases
-    - Big Data Technologies
-    - Distributed Databases
+11. [**Emerging Trends in Databases**](#11-emerging-trends-in-databases)
+    - [Cloud Databases](#111-cloud-databases)
+    - [Big Data Technologies](#112-big-data-technologies)
+    - [Distributed Databases](#113-distributed-databases)
 
-12. **Conclusion**
-    - Summary of Key Points
-    - Future Directions in Database Technology
+12. [**Conclusion**](#12-conclusion)
+    - [Summary of Key Points](#121-summary-of-key-points)
+    - [Future Directions in Database Technology](#122-future-directions-in-database-technology)
 
 
 ---
@@ -124,9 +124,9 @@ Establish how tables relate to one another (one-to-one, one-to-many, many-to-man
 A DBMS is software that interacts with end users, applications, and the database itself to capture and analyze data.
 
 ### 3.2 Types of DBMS
-- 3.2.1 **Relational DBMS (RDBMS)**: Organizes data into tables; uses SQL for data manipulation.
-- 3.2.2 **NoSQL Databases**: Non-relational; suitable for big data and real-time web applications.
-- 3.2.3 **NewSQL Databases**: Aim to provide the scalability of NoSQL while maintaining the consistency and reliability of traditional RDBMS.
+- ### 3.2.1 **Relational DBMS (RDBMS)**: Organizes data into tables; uses SQL for data manipulation.
+- ### 3.2.2 **NoSQL Databases**: Non-relational; suitable for big data and real-time web applications.
+- ### 3.2.3 **NewSQL Databases**: Aim to provide the scalability of NoSQL while maintaining the consistency and reliability of traditional RDBMS.
 
 ### 3.3 Comparison of Popular DBMS
 | Feature        | MySQL          | PostgreSQL     | MongoDB        | Oracle         |
