@@ -19,7 +19,7 @@
 3. [**Database Management Systems (DBMS)**](#3-database-management-systems-dbms)
    - [Overview of DBMS](#31-overview-of-dbms)
    - [Types of DBMS](#32-types-of-dbms)
-     - [Relational DBMS (RDBMS)](#321-Relational-DBMS-RDBMS)
+     - [Relational DBMS (RDBMS)](#321-Relational-DBMS-(RDBMS))
      - NoSQL Databases
      - NewSQL Databases
    - Comparison of Popular DBMS
