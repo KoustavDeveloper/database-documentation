@@ -3,61 +3,70 @@
 ## Table of Contents
 
 1. [**Introduction to Databases**](#1-introduction-to-databases)
-   - [Definition](#11-definition)
-   - [Importance of Databases](#12-importance-of-databases)
-   - [Types of Databases](#13-types-of-databases)
+   - 1.1 [Definition](#11-definition)
+   - 1.2 [Importance of Databases](#12-importance-of-databases)
+   - 1.3 [Types of Databases](#13-types-of-databases)
 
 2. [**Database Design**](#2-database-design)
-   - [Requirements Analysis](#21-requirements-analysis)
-   - [Data Modeling](#22-data-modeling)
-     - [Entity-Relationship Diagrams (ERD)](#221-entity-relationship-diagrams-erd)
-     - [Normalization](#222-normalization)
-   - [Schema Design](#223-schema-design)
-     - [Tables](#2231-tables)
-     - [Relationships](#2231-relationships)
+   - 2.1 [Requirements Analysis](#21-requirements-analysis)
+   - 2.2 [Data Modeling](#22-data-modeling)
+     - 2.2.1 [Entity-Relationship Diagrams (ERD)](#221-entity-relationship-diagrams-erd)
+     - 2.2.2 [Normalization](#222-normalization)
+     - 2.2.3 [Schema Design](#223-schema-design)
+       - 2.2.3.1 [Tables](#2231-tables)
+       - 2.2.3.2 [Relationships](#2232-relationships)
 
 3. [**Database Management Systems (DBMS)**](#3-database-management-systems-dbms)
-   - [Overview of DBMS](#31-overview-of-dbms)
-   - [Types of DBMS](#32-types-of-dbms)
-     - [Relational DBMS (RDBMS)](#321-relational-dbms-rdbms-organizes-data-into-tables-uses-sql-for-data-manipulation)
-     - [NoSQL Databases](#322-nosql-databases-non-relational-suitable-for-big-data-and-real-time-web-applications)
-     - [NewSQL Databases](#323-newsql-databases-aim-to-provide-the-scalability-of-nosql-while-maintaining-the-consistency-and-reliability-of-traditional-rdbms)
-   - [Comparison of Popular DBMS](#33-comparison-of-popular-dbms)
+   - 3.1 [Overview of DBMS](#31-overview-of-dbms)
+   - 3.2 [Types of DBMS](#32-types-of-dbms)
+     - 3.2.1 [Relational DBMS (RDBMS)](#321-relational-dbms-rdbms-organizes-data-into-tables-uses-sql-for-data-manipulation)
+     - 3.2.2 [NoSQL Databases](#322-nosql-databases-non-relational-suitable-for-big-data-and-real-time-web-applications)
+     - 3.2.3 [NewSQL Databases](#323-newsql-databases-aim-to-provide-the-scalability-of-nosql-while-maintaining-the-consistency-and-reliability-of-traditional-rdbms)
+   - 3.3 [Comparison of Popular DBMS](#33-comparison-of-popular-dbms)
      - MySQL
      - PostgreSQL
      - MongoDB
      - Oracle
 
 4. [**Database Implementation**](#4-database-implementation)
-   - [Installing a DBMS](#41-installing-a-dbms)
-   - [Creating a Database](#42-creating-a-database)
-   - [Defining Tables and Data Types](#43-defining-tables-and-data-types)
-   - [Inserting, Updating, and Deleting Data](#44-inserting-updating-and-deleting-data)
+   - 4.1 [Installing a DBMS](#41-installing-a-dbms)
+      - 4.1.1 [MySQL Installation](#411-mysql-installation)
+      - 4.1.2 [PostgreSQL Installation](#412-postgresql-installation)
+      - 4.1.3 [MongoDB Installation](#413-mongodb-installation)
+   - 4.2 [Creating a Database](#42-creating-a-database)
+      - 4.2.1 [MySQL](#421-mysql)
+      - 4.2.2 [PostgreSQL](#422-postgresql)
+      - 4.2.3 [MongoDB](#423-mongodb)
+   - 4.3 [Defining Tables and Data Types](#43-defining-tables-and-data-types)
+      - 4.3.1 [MySQL](#431-mysql)
+      - 4.3.2 [PostgreSQL](#432-postgresql)
+      - 4.3.3 [MongoDB](#433-mongodb)
+   - 4.4 [Inserting, Updating, and Deleting Data](#44-inserting-updating-and-deleting-data)
 
 5. [**Data Manipulation Language (DML)**](#5-data-manipulation-language-dml)
-   - [SQL Basics](#51-sql-basics)
-     - [SELECT](#511-select)
-     - [INSERT](#512-insert)
-     - [UPDATE](#513-update)
-     - [DELETE](#514-delete)
-   - [Joins and Subqueries](#52-joins-and-subqueries)
+   - 5.1 [SQL Basics](#51-sql-basics)
+     - 5.1.1 [SELECT](#511-select)
+     - 5.1.2 [INSERT](#512-insert)
+     - 5.1.3 [UPDATE](#513-update)
+     - 5.1.4 [DELETE](#514-delete)
+   - 5.2 [Joins and Subqueries](#52-joins-and-subqueries)
 
 6. [**Database Security**](#6-database-security)
-   - [User Management](#61-user-management)
-   - [Authentication and Authorization](#62-authentication-and-authorization)
-   - [Data Encryption](#63-data-encryption)
-   - [Backup and Recovery Strategies](#64-backup-and-recovery-strategies)
+   - 6.1 [User Management](#61-user-management)
+   - 6.2 [Authentication and Authorization](#62-authentication-and-authorization)
+   - 6.3 [Data Encryption](#63-data-encryption)
+   - 6.4 [Backup and Recovery Strategies](#64-backup-and-recovery-strategies)
 
 7. [**Database Performance Tuning**](#7-database-performance-tuning)
-   - [Indexing](#71-indexing)
-   - [Query Optimization](#72-query-optimization)
-   - [Database Partitioning](#73-database-partitioning)
-   - [Monitoring and Profiling Tools](#74-monitoring-and-profiling-tools)
+   - 7.1 [Indexing](#71-indexing)
+   - 7.2 [Query Optimization](#72-query-optimization)
+   - 7.3 [Database Partitioning](#73-database-partitioning)
+   - 7.4 [Monitoring and Profiling Tools](#74-monitoring-and-profiling-tools)
 
 8. [**Data Integrity and Transactions**](#8-data-integrity-and-transactions)
-   -[ACID Properties](#81-acid-properties)
-   - [Transactions and Concurrency Control](#82-transactions-and-concurrency-control)
-   - [Isolation Levels](#83-isolation-levels)
+   - 8.1 [ACID Properties](#81-acid-properties)
+   - 8.2 [Transactions and Concurrency Control](#82-transactions-and-concurrency-control)
+   - 8.3 [Isolation Levels](#83-isolation-levels)
 
 9. [**Backup and Recovery**](#9-backup-and-recovery)
    - [Types of Backups](#91-types-of-backups)
@@ -169,7 +178,7 @@ The process of organizing data to reduce redundancy and improve data integrity. 
 #### 2.2.3.1 Tables
 Define the structure of tables, including columns, data types, and constraints (e.g., primary keys, foreign keys).
 
-#### 2.2.3.1 Relationships
+#### 2.2.3.2 Relationships
 Establish how tables relate to one another (one-to-one, one-to-many, many-to-many).
 
 ## 3. Database Management Systems (DBMS)
@@ -246,7 +255,7 @@ A DBMS is software that interacts with end users, applications, and the database
 
 ---
 
-#### **2. PostgreSQL Installation**
+#### **4.1.2 PostgreSQL Installation**
 
 ##### **Windows**
 1. Download the PostgreSQL installer from the [official website](https://www.postgresql.org/download/windows/).
@@ -288,7 +297,7 @@ A DBMS is software that interacts with end users, applications, and the database
 
 ---
 
-#### **3. MongoDB Installation**
+#### **4.1.3 MongoDB Installation**
 
 ##### **Windows**
 1. Download MongoDB from the [MongoDB website](https://www.mongodb.com/try/download/community).
@@ -334,7 +343,7 @@ A DBMS is software that interacts with end users, applications, and the database
 ---
 
 ### 4.2 Creating a Database
-#### **1. MySQL**
+#### **4.2.1 MySQL**
 
 ##### **Using SQL Commands**
 1. **Open MySQL Command Line Interface (CLI)**:
@@ -363,7 +372,7 @@ A DBMS is software that interacts with end users, applications, and the database
 
 ---
 
-#### **2. PostgreSQL**
+#### **4.2.2 PostgreSQL**
 
 ##### **Using SQL Commands**
 1. **Access PostgreSQL via psql (CLI)**:
@@ -391,7 +400,7 @@ A DBMS is software that interacts with end users, applications, and the database
 
 ---
 
-#### **3. MongoDB**
+#### **4.2.3 MongoDB**
 
 ##### **Using MongoDB Shell (Command Line)**
 1. **Open the MongoDB shell**:
@@ -420,7 +429,7 @@ A DBMS is software that interacts with end users, applications, and the database
 ---
 
 ### 4.3 Defining Tables and Data Types
-#### **1. MySQL**
+#### **4.3.1 MySQL**
 
 ##### **Using SQL Commands**
 1. **Access MySQL CLI**:
@@ -459,7 +468,7 @@ A DBMS is software that interacts with end users, applications, and the database
 
 ---
 
-#### **2. PostgreSQL**
+#### **4.3.2 PostgreSQL**
 
 ##### **Using SQL Commands**
 1. **Access PostgreSQL CLI**:
@@ -498,7 +507,7 @@ A DBMS is software that interacts with end users, applications, and the database
 
 ---
 
-#### **3. MongoDB**
+#### **4.3.3 MongoDB**
 
 MongoDB uses documents (collections) instead of tables, and data types are handled dynamically during document insertion. However, you can create a schema in MongoDB using validation.
 
@@ -572,7 +581,7 @@ MongoDB uses documents (collections) instead of tables, and data types are handl
 ---
 
 ### 4.4 Inserting, Updating, and Deleting Data
-#### **1. INSERT - Adding Data**
+#### **4.4.1 INSERT - Adding Data**
 
 The `INSERT` command is used to add new rows (records) to a table.
 
@@ -590,7 +599,7 @@ VALUES (1, 'John', 'Doe', '1990-05-15', '2020-07-01', 50000.00);
 
 ---
 
-#### **2. SELECT - Retrieving Data**
+#### **4.4.2 SELECT - Retrieving Data**
 
 The `SELECT` command is used to query or retrieve data from the database.
 
@@ -617,7 +626,7 @@ SELECT * FROM employees;
 
 ---
 
-#### **3. UPDATE - Modifying Data**
+#### **4.4.3 UPDATE - Modifying Data**
 
 The `UPDATE` command is used to modify existing records in a table.
 
@@ -639,7 +648,7 @@ WHERE employee_id = 1;
 
 ---
 
-#### **4. DELETE - Removing Data**
+#### **4.4.4 DELETE - Removing Data**
 
 The `DELETE` command removes records from a table.
 
@@ -659,7 +668,7 @@ WHERE employee_id = 1;
 
 ---
 
-#### **5. CREATE - Creating Tables or Databases**
+#### **4.4.5 CREATE - Creating Tables or Databases**
 
 The `CREATE` command is used to create a new database or table.
 
@@ -682,7 +691,7 @@ CREATE DATABASE mydatabase;
 
 ---
 
-#### **6. ALTER - Modifying Table Structure**
+#### **4.4.6 ALTER - Modifying Table Structure**
 
 The `ALTER` command is used to modify an existing table, such as adding, deleting, or modifying columns.
 
@@ -706,7 +715,7 @@ DROP COLUMN email;
 
 ---
 
-#### **7. DROP - Deleting Tables or Databases**
+#### **4.4.7 DROP - Deleting Tables or Databases**
 
 The `DROP` command is used to delete entire tables or databases.
 
@@ -722,7 +731,7 @@ DROP DATABASE mydatabase;
 
 ---
 
-#### **8. TRUNCATE - Removing All Data from a Table**
+#### **4.4.8 TRUNCATE - Removing All Data from a Table**
 
 `TRUNCATE` is used to delete all records from a table but keeps the table structure intact.
 
@@ -738,7 +747,7 @@ TRUNCATE TABLE employees;
 
 ---
 
-#### **9. JOIN - Combining Data from Multiple Tables**
+#### **4.4.9 JOIN - Combining Data from Multiple Tables**
 
 The `JOIN` command is used to retrieve data from multiple tables based on a related column.
 
@@ -764,7 +773,7 @@ ON employees.department_id = departments.department_id;
 
 ---
 
-#### **10. AGGREGATE FUNCTIONS - Summarizing Data**
+#### **4.4.10 AGGREGATE FUNCTIONS - Summarizing Data**
 
 SQL provides functions to perform operations like counting, summing, finding averages, etc.
 
@@ -1682,13 +1691,34 @@ Monitoring and profiling tools are essential for tracking database performance, 
 ## 8. Data Integrity and Transactions
 
 ### 8.1 ACID Properties
-- 8.1.1 **Atomicity**: Transactions are all-or-nothing.
-- 8.1.2 **Consistency**: Database remains in a valid state after transactions.
-- 8.1.3 **Isolation**: Transactions operate independently of each other.
-- 8.1.4 **Durability**: Completed transactions are permanent.
+In database management systems (DBMS), **ACID** properties ensure reliable processing of transactions. The term stands for **Atomicity, Consistency, Isolation,** and **Durability**:
+
+- 8.1.1 **Atomicity**: A transaction is treated as a single unit, meaning it either completes entirely or does not happen at all. If any part of the transaction fails, the entire transaction is rolled back, ensuring no partial updates occur.
+
+- 8.1.2 **Consistency**: After a transaction, the database must remain in a valid state. It ensures that a transaction transforms the database from one valid state to another, maintaining all predefined rules, such as constraints and triggers.
+
+- 8.1.3 **Isolation**: Transactions should be executed independently of each other. This property ensures that the intermediate state of a transaction is invisible to other transactions. Concurrent transactions appear to run sequentially, avoiding conflicts.
+
+- 8.1.4 **Durability**: Once a transaction is committed, the changes are permanent, even in the case of a system failure. This ensures the reliability of data storage.
+
+These ACID properties are crucial for maintaining data integrity, especially in systems where multiple users access and modify the data simultaneously. They prevent errors like data corruption, inconsistencies, or unauthorized data access.
 
 ### 8.2 Transactions and Concurrency Control
-Managing multiple transactions to ensure data consistency and prevent conflicts.
+**Transactions** in a database are sequences of operations performed as a single unit of work. To maintain data consistency and integrity, transactions must follow the ACID properties (Atomicity, Consistency, Isolation, Durability). When multiple transactions are executed simultaneously in a shared database system, it leads to **concurrency**. Proper **concurrency control** is crucial to prevent issues like data inconsistency, deadlock, or lost updates.
+
+- #### 8.2.1 Key Problems in Concurrency:
+1. **Lost Updates**: Two or more transactions update the same data simultaneously, and one update overwrites the other.
+2. **Dirty Reads**: A transaction reads data that has been modified by another transaction but not yet committed, leading to potential inconsistencies if the other transaction is rolled back.
+3. **Non-repeatable Reads**: A transaction reads the same data multiple times but gets different results due to modifications by other concurrent transactions.
+4. **Phantom Reads**: New rows are added or deleted by another transaction during the execution of a transaction, affecting the result of queries.
+
+- #### 8.2.2 Concurrency Control Techniques:
+1. **Locking Mechanisms**: Uses locks (shared, exclusive) to control access to data. Transactions must acquire appropriate locks before reading or writing data.
+2. **Timestamp Ordering**: Assigns timestamps to transactions, ensuring that older transactions are executed before newer ones, avoiding conflicts.
+3. **Optimistic Concurrency Control**: Transactions proceed without restrictions but are validated before committing to ensure no conflict with other concurrent transactions.
+4. **Multiversion Concurrency Control (MVCC)**: Maintains multiple versions of data, allowing transactions to access the latest consistent version, ensuring isolation.
+
+Effective concurrency control is essential for maintaining data consistency and ensuring smooth multi-user access in a database.
 
 ### 8.3 Isolation Levels
 Different settings for how transactions interact with one another (e.g., Read Committed, Serializable).
